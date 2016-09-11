@@ -15,6 +15,10 @@
 		0E6772F81D850CD20089CA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6772F61D850CD20089CA5B /* LaunchScreen.storyboard */; };
 		0E6773031D850CD20089CA5B /* mellowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6773021D850CD20089CA5B /* mellowTests.swift */; };
 		0E67730E1D850CD20089CA5B /* mellowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67730D1D850CD20089CA5B /* mellowUITests.swift */; };
+		0E6773221D850E1F0089CA5B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6773211D850E1F0089CA5B /* KeyboardViewController.swift */; };
+		0E6773261D850E1F0089CA5B /* MellowKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E67731F1D850E1F0089CA5B /* MellowKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E6773371D85CE440089CA5B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E6773361D85CE440089CA5B /* View.xib */; };
+		0E67733B1D85D1F20089CA5B /* beach-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E67733A1D85D1F20089CA5B /* beach-background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 0E6772E61D850CD20089CA5B;
 			remoteInfo = mellow;
 		};
+		0E6773241D850E1F0089CA5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E6772DF1D850CD20089CA5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E67731E1D850E1F0089CA5B;
+			remoteInfo = MellowKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E67732A1D850E1F0089CA5B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E6773261D850E1F0089CA5B /* MellowKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E6772E71D850CD20089CA5B /* mellow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mellow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +74,11 @@
 		0E6773091D850CD20089CA5B /* mellowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mellowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E67730D1D850CD20089CA5B /* mellowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mellowUITests.swift; sourceTree = "<group>"; };
 		0E67730F1D850CD20089CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E67731F1D850E1F0089CA5B /* MellowKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MellowKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6773211D850E1F0089CA5B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0E6773231D850E1F0089CA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6773361D85CE440089CA5B /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		0E67733A1D85D1F20089CA5B /* beach-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "beach-background.jpg"; path = "../../../Downloads/beach-background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E67731C1D850E1F0089CA5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +119,7 @@
 				0E6772E91D850CD20089CA5B /* mellow */,
 				0E6773011D850CD20089CA5B /* mellowTests */,
 				0E67730C1D850CD20089CA5B /* mellowUITests */,
+				0E6773201D850E1F0089CA5B /* MellowKeyboard */,
 				0E6772E81D850CD20089CA5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +130,7 @@
 				0E6772E71D850CD20089CA5B /* mellow.app */,
 				0E6772FE1D850CD20089CA5B /* mellowTests.xctest */,
 				0E6773091D850CD20089CA5B /* mellowUITests.xctest */,
+				0E67731F1D850E1F0089CA5B /* MellowKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +167,17 @@
 			path = mellowUITests;
 			sourceTree = "<group>";
 		};
+		0E6773201D850E1F0089CA5B /* MellowKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0E67733A1D85D1F20089CA5B /* beach-background.jpg */,
+				0E6773211D850E1F0089CA5B /* KeyboardViewController.swift */,
+				0E6773231D850E1F0089CA5B /* Info.plist */,
+				0E6773361D85CE440089CA5B /* View.xib */,
+			);
+			path = MellowKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +188,12 @@
 				0E6772E31D850CD20089CA5B /* Sources */,
 				0E6772E41D850CD20089CA5B /* Frameworks */,
 				0E6772E51D850CD20089CA5B /* Resources */,
+				0E67732A1D850E1F0089CA5B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E6773251D850E1F0089CA5B /* PBXTargetDependency */,
 			);
 			name = mellow;
 			productName = mellow;
@@ -184,6 +236,23 @@
 			productReference = 0E6773091D850CD20089CA5B /* mellowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0E67731E1D850E1F0089CA5B /* MellowKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E6773271D850E1F0089CA5B /* Build configuration list for PBXNativeTarget "MellowKeyboard" */;
+			buildPhases = (
+				0E67731B1D850E1F0089CA5B /* Sources */,
+				0E67731C1D850E1F0089CA5B /* Frameworks */,
+				0E67731D1D850E1F0089CA5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MellowKeyboard;
+			productName = MellowKeyboard;
+			productReference = 0E67731F1D850E1F0089CA5B /* MellowKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +274,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 0E6772E61D850CD20089CA5B;
 					};
+					0E67731E1D850E1F0089CA5B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 0E6772E21D850CD20089CA5B /* Build configuration list for PBXProject "mellow" */;
@@ -223,6 +295,7 @@
 				0E6772E61D850CD20089CA5B /* mellow */,
 				0E6772FD1D850CD20089CA5B /* mellowTests */,
 				0E6773081D850CD20089CA5B /* mellowUITests */,
+				0E67731E1D850E1F0089CA5B /* MellowKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +322,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E67731D1D850E1F0089CA5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6773371D85CE440089CA5B /* View.xib in Resources */,
+				0E67733B1D85D1F20089CA5B /* beach-background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E67731B1D850E1F0089CA5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6773221D850E1F0089CA5B /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = 0E6772E61D850CD20089CA5B /* mellow */;
 			targetProxy = 0E67730A1D850CD20089CA5B /* PBXContainerItemProxy */;
+		};
+		0E6773251D850E1F0089CA5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E67731E1D850E1F0089CA5B /* MellowKeyboard */;
+			targetProxy = 0E6773241D850E1F0089CA5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = mellow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.h2o.rahul.mellow;
@@ -416,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = mellow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.h2o.rahul.mellow;
@@ -469,6 +566,28 @@
 			};
 			name = Release;
 		};
+		0E6773281D850E1F0089CA5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MellowKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.h2o.rahul.mellow.MellowKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0E6773291D850E1F0089CA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MellowKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.h2o.rahul.mellow.MellowKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,6 +607,7 @@
 				0E6773141D850CD20089CA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E6773151D850CD20089CA5B /* Build configuration list for PBXNativeTarget "mellowTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +616,7 @@
 				0E6773171D850CD20089CA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E6773181D850CD20089CA5B /* Build configuration list for PBXNativeTarget "mellowUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +625,16 @@
 				0E67731A1D850CD20089CA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E6773271D850E1F0089CA5B /* Build configuration list for PBXNativeTarget "MellowKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E6773281D850E1F0089CA5B /* Debug */,
+				0E6773291D850E1F0089CA5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
